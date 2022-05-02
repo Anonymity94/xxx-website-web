@@ -1,0 +1,52 @@
+.title {
+  @color: #008cf3;
+  p {
+    margin-bottom: 4px;
+    color: @color;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  span {
+    position: relative;
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 20px;
+
+    &::after {
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 20px;
+      height: 4px;
+      background-color: @color;
+      content: '';
+    }
+  }
+}
+
+.box {
+  padding: 40px;
+  font-size: 16px;
+  background-color: #eaeaea;
+  ul,
+  li {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.location {
+  display: inline-block;
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 4px;
+
+  img {
+    max-width: 100%;
+  }
+}

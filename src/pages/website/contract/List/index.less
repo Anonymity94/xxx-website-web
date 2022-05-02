@@ -1,0 +1,45 @@
+.card {
+  .cardTitle {
+    margin-right: 20px;
+  }
+  :global {
+    .ant-tag {
+      font-size: 14px;
+    }
+  }
+}
+
+.list {
+  &-wrap {
+    margin-top: 20px;
+  }
+  .avatar {
+    height: 108px;
+  }
+
+  .description {
+    height: 54px;
+    :global {
+      div.ant-typography,
+      .ant-typography p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  :global {
+    .ant-pro-list-row-description {
+      margin-top: 6px !important;
+    }
+  }
+}
+
+.titleBox {
+  display: flex;
+  justify-content: space-between;
+  .searchBox {
+    position: relative;
+    right: 0;
+    width: 300px;
+  }
+}

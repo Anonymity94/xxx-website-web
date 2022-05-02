@@ -1,0 +1,171 @@
+@import '~antd/es/style/themes/default.less';
+.header {
+  @bgColor: #2d4b6d;
+  height: 330px;
+  padding: 50px 0;
+  background: @bgColor;
+
+  &-wrap {
+    display: flex;
+    color: #fff;
+    font-family: 'Microsoft YaHei';
+  }
+
+  &-avatar {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+  }
+
+  &-content {
+    width: 30%;
+    margin: 0 40px;
+    .fullname {
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .tag {
+      display: inline-block;
+      height: 28px;
+      padding: 2px 8px 2px 2px;
+      background-color: #818da1;
+      border-radius: 10px;
+    }
+
+    .lawyerTitle {
+      margin: 10px 0;
+      font-size: 20px;
+    }
+
+    > p {
+      font-size: 16px;
+    }
+
+    .action {
+      @color: #01a797;
+      & > span {
+        display: inline-block;
+        width: 140px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 15px;
+        cursor: pointer;
+
+        &.disabled{
+          background-color: @disabled-bg;
+          cursor: not-allowed !important;
+        }
+
+        // &:first-child {
+        //   color: #fff;
+        //   background-color: @color;
+        // }
+
+        &:last-child {
+          // margin-left: 20px;
+          // color: @color;
+          // background-color: #fff;
+          color: #fff;
+          background-color: @color;
+        }
+      }
+    }
+  }
+
+  &-description {
+    @msgHeight: 30px;
+    flex: 1 1;
+    margin-top: @msgHeight / 2;
+
+    .phone-box {
+      position: relative;
+      margin-bottom: 1em;
+      text-align: center;
+      border: 1px solid #fff;
+      border-radius: 2px;
+
+      .phone {
+        display: inline-block;
+        height: 66px;
+        margin: 10px 0;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 66px;
+      }
+      .msg {
+        @width: 220px;
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        width: @width;
+        margin-left: -@width / 2;
+        padding: 0 10px;
+        font-size: 14px;
+        line-height: @msgHeight;
+        background: @bgColor;
+      }
+    }
+    .description {
+      :global {
+        .ant-typography {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  @color: #263e56;
+  .tabs {
+    .section {
+      margin-bottom: 20px;
+      &-title {
+        color: @color;
+        font-weight: bold;
+        font-size: 16px;
+
+        :global {
+          .anticon {
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+    :global {
+      .ant-tabs-nav {
+        margin-bottom: 0;
+      }
+      .ant-tabs-content {
+        border: 1px solid @border-color-split;
+        border-top: none;
+      }
+
+      .ant-tabs-tabpane {
+        padding: 20px 10px;
+        min-height: 300px;
+      }
+
+      .ant-tabs-tab {
+        padding: 12px 30px !important;
+        background: #e9e9e9;
+        border-top: 3px solid transparent;
+
+        &.ant-tabs-tab-active {
+          background: #fff;
+          border-top-color: @color;
+
+          .ant-tabs-tab-btn {
+            color: @color !important;
+          }
+        }
+      }
+    }
+  }
+}

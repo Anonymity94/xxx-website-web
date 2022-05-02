@@ -1,0 +1,20 @@
+.box {
+  @color: #263e56;
+  .header {
+    margin-bottom: 10px;
+    .name {
+      margin-right: 6px;
+      padding-left: 6px;
+      font-size: 16px;
+      border-left: 4px solid @color;
+    }
+  }
+
+  .content {
+    :global {
+      .ant-col {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

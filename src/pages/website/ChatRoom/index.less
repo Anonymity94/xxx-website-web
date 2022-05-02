@@ -1,0 +1,125 @@
+@import '~antd/es/style/themes/default.less';
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #2e2f3d;
+}
+.chat-room {
+  &-wrap {
+    display: flex;
+    width: 1130px;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+
+  &-left {
+    width: 250px;
+    padding: 10px;
+
+    & > div {
+      padding: 10px 0;
+    }
+
+    &-header {
+      font-weight: bold;
+      font-size: 16px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    &-content {
+      height: calc(100% - 46px);
+    }
+  }
+
+  &-receiver-list {
+    height: 100%;
+    margin-bottom: 0;
+    padding: 0;
+    overflow-y: auto;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 30px;
+      margin-bottom: 4px;
+      padding: 0 10px;
+      font-size: 14px;
+      line-height: 30px;
+      background-color: #f0f0f0;
+      border-radius: 2px;
+      border-radius: 2px;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      &.active {
+        color: white;
+        background-color: @primary-color;
+      }
+    }
+  }
+
+  &-right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border-left: 1px solid #f0f0f0;
+
+    & > div {
+      padding: 10px 20px;
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 40px;
+    }
+    &-content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      overflow-y: scroll;
+      border-top: 1px solid #f0f0f0;
+      border-bottom: 1px solid #f0f0f0;
+
+      &-footer-placeholder {
+        padding: 10px 0;
+      }
+    }
+    &-footer {
+      height: 140px;
+    }
+  }
+  &-input {
+    max-height: 120px;
+    padding: 0;
+    overflow-y: auto;
+    &-file {
+      :global {
+        .anticon {
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+    &-wrap {
+      position: relative;
+    }
+
+    &-submit {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 100px;
+    }
+  }
+}

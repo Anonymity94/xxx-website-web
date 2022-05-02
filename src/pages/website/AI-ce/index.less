@@ -1,0 +1,78 @@
+.ai-ce {
+  width: 90%;
+  margin: 20px auto;
+
+  &-action {
+    margin-bottom: 10px;
+  }
+  &-content {
+    display: flex;
+  }
+  &-left {
+    flex: 1;
+  }
+  &-right {
+    width: 460px;
+    margin-left: 20px;
+  }
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #ed6d1f;
+  font-size: 18px;
+  text-align: center;
+}
+
+.typeWrap {
+  display: flex;
+  justify-content: space-between;
+
+  .typeItem {
+    box-sizing: border-box;
+    min-width: 48%;
+    height: 150px;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 150px;
+    text-align: center;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 1px 7px 1px hsla(0, 0%, 53.3%, 0.24);
+    cursor: pointer;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+      box-shadow: 0 1px 20px 6px hsla(0, 0%, 53.3%, 0.23921568627450981);
+    }
+  }
+}
+
+.detailCollapse {
+  .tipTitle {
+    color: rgb(70, 127, 221);
+  }
+
+  .level {
+    &_A {
+      color: #f44336;
+    }
+    &_B {
+      color: rgb(226, 145, 0);
+    }
+    &_C {
+      color: rgb(235, 215, 78);
+    }
+  }
+
+  :global {
+    .ant-collapse-header {
+      margin-bottom: 6px;
+      padding-top: 8px !important;
+      padding-bottom: 8px !important;
+      background-color: #fffbe6;
+      border: 1px solid #ffe58f;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import '~antd/es/style/themes/default.less';
+
+@padding-space: 144px;
+
+.footer {
+  position: relative;
+  z-index: 100;
+  clear: both;
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 14px;
+  background-color: #000;
+
+  &-wrap {
+    position: relative;
+    padding: 40px @padding-space 10px @padding-space;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+    @media screen and (max-width: @screen-xs) {
+      padding: 20px 0;
+    }
+  }
+  .column {
+    text-align: left;
+
+    @media screen and (max-width: @screen-xs) {
+      text-align: center;
+    }
+    > h2 {
+      position: relative;
+      margin: 0 auto 24px;
+      font-weight: 500;
+      font-size: 16px;
+    }
+    > div {
+      margin: 12px 0;
+
+      &.bold {
+        font-size: 24px;
+      }
+    }
+  }
+  a {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  h2 {
+    color: rgba(255, 255, 255, 1);
+    & > span {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  :global {
+    .ant-pro-global-footer {
+      margin: 10px 0;
+      background: #000;
+    }
+
+    .ant-pro-global-footer-copyright {
+      color: #fff;
+    }
+  }
+}

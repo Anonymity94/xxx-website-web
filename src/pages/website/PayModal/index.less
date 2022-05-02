@@ -1,0 +1,65 @@
+@import '~antd/es/style/themes/default.less';
+.qrcodeWrap {
+  margin-bottom: 20px;
+  text-align: center;
+  .title {
+    margin-bottom: 4px;
+  }
+
+  .money {
+    color: #fa920e;
+    font-size: 26px;
+  }
+
+  .wrap {
+    .imgWrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: content-box;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      overflow: hidden;
+      border: 1px solid @border-color-split;
+      border-radius: 6px;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+.payBox {
+  font-weight: bold;
+  font-size: 18px;
+
+  .icon {
+    margin-right: 4px;
+  }
+
+  &.weixin {
+    .icon {
+      img {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    .txt {
+    }
+  }
+
+  &.ali {
+    .icon {
+      color: #1676ff;
+      font-size: 20px;
+    }
+
+    .txt {
+      color: #1676ff;
+    }
+  }
+}

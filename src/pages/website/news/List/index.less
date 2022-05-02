@@ -1,0 +1,35 @@
+@import '~antd/es/style/themes/default.less';
+
+.news {
+  &-list {
+    :global {
+      .ant-pro-list-row {
+        @media (max-width: @screen-xs) {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+  &-title {
+    &__text {
+    }
+
+    :global {
+      .ant-tag {
+        margin-left: 10px;
+        vertical-align: top;
+      }
+    }
+  }
+  &-cover {
+    width: 160px;
+    &__item > div {
+      height: 140px;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: center;
+      background-size: contain;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.page-content {
+  max-width: 1256px;
+  margin: 0 auto;
+
+  .hide-breadcrumb {
+    :global {
+      .has-breadcrumb {
+        display: none;
+      }
+    }
+  }
+  .no-margin {
+    :global {
+      .ant-pro-page-container-children-content {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
